@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Техническое SEO — SEO-Гид</title>
+  <meta name="description" content="Технические аспекты SEO: индексация, скорость загрузки, микроразметка и мобильная адаптация.">
+  <link rel="stylesheet" href="https://cdn.concisecss.com/concise.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a href="index.html" class="site-header__logo" title="На главную страницу SEO-Гид">SEO<span class="site-header__logo-accent">Гид</span></a>
+      <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="site-nav">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Основная навигация">
+        <ul class="site-nav__list">
+            <li class="site-nav__item"><a href="index.html" class="site-nav__link">Главная</a></li>
+            <li class="site-nav__item"><a href="chto-takoe-seo.html" class="site-nav__link">Что такое SEO</a></li>
+            <li class="site-nav__item"><a href="onpage-seo.html" class="site-nav__link">On-page SEO</a></li>
+            <li class="site-nav__item"><a href="offpage-seo.html" class="site-nav__link">Off-page SEO</a></li>
+            <li class="site-nav__item"><a href="tehnicheskoe-seo.html" class="site-nav__link site-nav__link--active">Техническое SEO</a></li>
+            <li class="site-nav__item"><a href="instrumenty.html" class="site-nav__link">Инструменты SEO</a></li>
+            <li class="site-nav__item"><a href="keysy.html" class="site-nav__link">Кейсы</a></li>
+            <li class="site-nav__item"><a href="lokalnoe-seo.html" class="site-nav__link">Локальное SEO</a></li>
+            <li class="site-nav__item"><a href="glossary.html" class="site-nav__link">Глоссарий</a></li>
+            <li class="site-nav__item"><a href="kontakty.html" class="site-nav__link">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="main__inner">
+      <div class="content">
+        <h1 class="content__title">Техническое SEO</h1>
+
+        <p>Техническое SEO отвечает за то, чтобы поисковый робот мог беспрепятственно обойти, проиндексировать и корректно понять содержимое сайта, а пользователь — быстро и удобно им пользоваться. Это самая незаметная для посетителя часть SEO, но именно она определяет, попадёт ли страница в индекс вообще.</p>
+
+        <h2 class="content__subtitle">Индексация и «краулинговый бюджет»</h2>
+        <p>У каждого сайта есть условный лимит на то, сколько его страниц робот успеет обойти за один заход, — краулинговый бюджет. Если сайт захламлён дублями, битыми ссылками и бесполезными техническими страницами, робот тратит ресурс на них, а не на действительно важный контент. Поэтому первая задача — открыть для индексации только нужные страницы:</p>
+        <ul class="list">
+          <li>Файл <code>robots.txt</code> — указывает роботу, какие разделы сканировать не нужно (админку, служебные страницы), но не должен блокировать важные для отображения страницы файлы CSS и JS;</li>
+          <li>Файл <code>sitemap.xml</code> — карта сайта со списком актуальных страниц, которая помогает роботу быстрее находить новый и обновлённый контент;</li>
+          <li>Проверка ответов сервера — сайт должен корректно отдавать код 200 для рабочих страниц и 404 для несуществующих, чтобы робот не тратил время на «мёртвые» адреса.</li>
+        </ul>
+
+        <h2 class="content__subtitle">Дубли страниц и редиректы</h2>
+        <p>Дубли — одна из самых частых технических проблем, особенно у интернет-магазинов: один и тот же товар может быть доступен по нескольким адресам из-за фильтров, сортировок и параметров в URL. Для решения используют:</p>
+        <ul class="list">
+          <li><code>rel="canonical"</code> — атрибут, который явно указывает поисковику «основную» версию страницы среди похожих;</li>
+          <li><strong>Редирект 301</strong> — постоянное перенаправление, когда страница удалена навсегда (например, товар снят с производства, а трафик с его карточки нужно направить на аналог);</li>
+          <li><strong>Редирект 302</strong> — временное перенаправление, если товар лишь на время отсутствует в наличии.</li>
+        </ul>
+
+        <h2 class="content__subtitle">Скорость загрузки и Core Web Vitals</h2>
+        <p>Скорость напрямую влияет и на ранжирование, и на поведенческие показатели: пользователи закрывают вкладку, если страница не открылась за 2–3 секунды. Google и Яндекс официально учитывают в ранжировании набор метрик <strong>Core Web Vitals</strong> — они оценивают, как быстро прогружается основной контент, насколько быстро страница становится «кликабельной» и не «прыгают» ли элементы верстки во время загрузки. Для диагностики используют Google PageSpeed Insights, Lighthouse и раздел диагностики в Яндекс Вебмастере. На практике ускорение достигается сжатием изображений, минификацией CSS и JS и настройкой кеширования.</p>
+
+        <h2 class="content__subtitle">Мобильная адаптация</h2>
+        <p>Обе поисковые системы используют Mobile-First индексацию: в первую очередь оценивается именно мобильная версия сайта, а не десктопная. Поэтому вёрстка должна корректно отображаться на экранах шириной менее 768px, на планшетах (от 768px) и на десктопах (от 992px и выше) — именно так организована адаптивность на этом сайте. Проверить корректность мобильной версии можно через специальный инструмент проверки мобильных страниц в Яндекс Вебмастере или Google Search Console.</p>
+
+        <h2 class="content__subtitle">HTTPS и безопасность</h2>
+        <p>Работа сайта по защищённому протоколу HTTPS (с SSL-сертификатом) — сегодня не опция, а обязательное условие: браузеры прямо помечают HTTP-сайты как «небезопасные», что отпугивает посетителей, а поисковые системы учитывают наличие HTTPS при ранжировании.</p>
+
+        <h2 class="content__subtitle">Микроразметка для расширенных сниппетов</h2>
+        <p>Структурированные данные по стандарту Schema.org (в формате JSON-LD) «объясняют» роботу, что именно находится на странице: это отзыв, рецепт, товар с ценой или ответ на частозадаваемый вопрос. Благодаря этому в выдаче может появиться расширенный сниппет — с рейтингом звёздами, ценой или блоком «люди также спрашивают», — что заметно повышает кликабельность страницы.</p>
+
+      </div>
+    <aside class="sidebar" aria-label="Боковая панель">
+      <div class="sidebar__block">
+        <h2 class="sidebar__title">Популярное</h2>
+        <ul class="sidebar__list">
+          <li><a href="onpage-seo.html">On-page оптимизация</a></li>
+          <li><a href="tehnicheskoe-seo.html">Техническое SEO</a></li>
+          <li><a href="instrumenty.html">Обзор инструментов</a></li>
+        </ul>
+      </div>
+      <div class="sidebar__block">
+        <h2 class="sidebar__title">Рассылка</h2>
+        <p>Раз в неделю — подборка новостей SEO.</p>
+        <form class="form form--subscribe" action="#" method="post">
+          <label class="form__label" for="sub-email">Email</label>
+          <input class="form__input" type="email" id="sub-email" name="email" placeholder="you@mail.com" required>
+          <button class="form__submit" type="submit">Подписаться</button>
+        </form>
+      </div>
+    </aside>
+
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <div class="site-footer__col">
+        <h2 class="site-footer__title">SEO-Гид</h2>
+        <p>Учебный проект: сайт о поисковой оптимизации (SEO), собранный на фреймворке Concise CSS.</p>
+      </div>
+      <div class="site-footer__col">
+        <h3 class="site-footer__subtitle">Разделы</h3>
+        <ul class="site-footer__list">
+          <li><a href="chto-takoe-seo.html">Что такое SEO</a></li>
+          <li><a href="instrumenty.html">Инструменты</a></li>
+          <li><a href="glossary.html">Глоссарий</a></li>
+          <li><a href="kontakty.html">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="site-footer__col">
+        <h3 class="site-footer__subtitle">Контакты</h3>
+        <ul class="site-footer__list">
+          <li>Email: <a href="mailto:info@seo-gid.example">info@seo-gid.example</a></li>
+          <li>Телефон: +7 (900) 000-00-00</li>
+          <li>г. Сыктывкар, ул. Примерная, д. 1</li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <p>&copy; 2026 SEO-Гид. Учебный проект. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

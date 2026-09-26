@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>On-page SEO — SEO-Гид</title>
+  <meta name="description" content="Внутренняя оптимизация сайта: семантика, мета-теги, заголовки, контент и изображения.">
+  <link rel="stylesheet" href="https://cdn.concisecss.com/concise.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a href="index.html" class="site-header__logo" title="На главную страницу SEO-Гид">SEO<span class="site-header__logo-accent">Гид</span></a>
+      <button class="burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="site-nav">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Основная навигация">
+        <ul class="site-nav__list">
+            <li class="site-nav__item"><a href="index.html" class="site-nav__link">Главная</a></li>
+            <li class="site-nav__item"><a href="chto-takoe-seo.html" class="site-nav__link">Что такое SEO</a></li>
+            <li class="site-nav__item"><a href="onpage-seo.html" class="site-nav__link site-nav__link--active">On-page SEO</a></li>
+            <li class="site-nav__item"><a href="offpage-seo.html" class="site-nav__link">Off-page SEO</a></li>
+            <li class="site-nav__item"><a href="tehnicheskoe-seo.html" class="site-nav__link">Техническое SEO</a></li>
+            <li class="site-nav__item"><a href="instrumenty.html" class="site-nav__link">Инструменты SEO</a></li>
+            <li class="site-nav__item"><a href="keysy.html" class="site-nav__link">Кейсы</a></li>
+            <li class="site-nav__item"><a href="lokalnoe-seo.html" class="site-nav__link">Локальное SEO</a></li>
+            <li class="site-nav__item"><a href="glossary.html" class="site-nav__link">Глоссарий</a></li>
+            <li class="site-nav__item"><a href="kontakty.html" class="site-nav__link">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="main__inner">
+      <div class="content">
+        <h1 class="content__title">On-page SEO: внутренняя оптимизация</h1>
+
+        <p>Внутренняя оптимизация (on-page SEO) — это вся работа над самим сайтом: над его структурой, кодом, текстами и техническими элементами страниц. Именно на неё приходится основной объём усилий SEO-специалиста, и именно она даёт наиболее устойчивый и предсказуемый результат.</p>
+
+        <h2 class="content__subtitle">Структура сайта и URL</h2>
+        <p>Логичная структура — это когда любую страницу можно найти за 2–3 клика от главной, а адрес страницы понятен и человеку, и роботу: <code>/catalog/bicycles/</code> лучше, чем <code>/index.php?id=482</code>. Такие адреса называют ЧПУ — «человекопонятный урл». Кроме удобства, это напрямую влияет на индексацию: чем сложнее и запутаннее структура, тем труднее поисковому роботу обойти и корректно понять сайт.</p>
+
+        <h2 class="content__subtitle">Технический аудит и дубли страниц</h2>
+        <p>Частая проблема интернет-магазинов и каталогов — страницы-дубли: один и тот же товар доступен по нескольким разным адресам из-за фильтров, сортировок или вложенности категорий. Робот тратит на них ресурс сканирования впустую и может запутаться, какую версию показывать в выдаче. Решение — настройка канонических адресов (<code>rel="canonical"</code>), корректный <code>robots.txt</code> и файл <code>sitemap.xml</code>, а также устранение битых ссылок и ускорение загрузки страниц.</p>
+
+        <h2 class="content__subtitle">Мета-теги</h2>
+        <p><code>&lt;title&gt;</code> и <code>meta description</code> — это то, что пользователь видит прямо в выдаче до перехода на сайт, поэтому от них зависит не только релевантность запросу, но и кликабельность (CTR). Хороший title отвечает на вопрос «что здесь есть и почему это выгодно» — сравните:</p>
+        <ul class="list">
+          <li>Слабо: «Пластиковые окна — компания ОконПро»</li>
+          <li>Лучше: «Пластиковые окна под ключ в Москве — от 8 900 ₽, замер и монтаж за 3 дня»</li>
+        </ul>
+
+        <h2 class="content__subtitle">Заголовки и контент страницы</h2>
+        <ul class="list">
+          <li>Один <code>&lt;h1&gt;</code> на странице и логичная иерархия <code>h2–h6</code> ниже него;</li>
+          <li>Уникальный, полезный текст, который действительно раскрывает тему запроса, а не просто содержит нужные слова;</li>
+          <li>Списки, таблицы и подзаголовки вместо «простыни» текста — так контент легче сканировать и глазами, и роботом;</li>
+          <li><strong>Внутренняя перелинковка</strong> — ссылки на связанные страницы сайта, которые помогают пользователю и распределяют «вес» между разделами.</li>
+        </ul>
+
+        <h2 class="content__subtitle">Коммерческие факторы и юзабилити</h2>
+        <p>Для коммерческих сайтов важно закрыть базовые вопросы посетителя прямо на странице: цену, условия доставки и оплаты, контакты компании. Отдельно на позиции влияет удобство использования сайта в целом — быстрая загрузка, понятная навигация и корректное отображение на мобильных устройствах.</p>
+
+        <h2 class="content__subtitle">Оптимизация изображений</h2>
+        <p>Для картинок важно заполнять атрибут <code>alt</code> (описание для роботов и людей с нарушениями зрения) и использовать современные форматы, например WebP, а также адаптивные изображения через <code>srcset</code> и <code>sizes</code>, чтобы браузер загружал файл подходящего размера под конкретное устройство.</p>
+        <figure>
+          <img
+            src="img/struktura-saita-800.webp"
+            srcset="img/struktura-saita-400.webp 400w, img/struktura-saita-800.webp 800w, img/struktura-saita-1200.webp 1200w"
+            sizes="(max-width: 767px) 100vw, (max-width: 991px) 70vw, 600px"
+            alt="Специалист анализирует на ноутбуке древовидную структуру сайта: главная страница, каталог с подкатегориями, блог со статьями и раздел контактов"
+            title="Пример визуализации структуры сайта для SEO-анализа"
+            loading="lazy" width="800" height="533">
+          <figcaption>Анализ структуры сайта помогает находить дубли страниц, слишком глубокую вложенность разделов и другие проблемы, мешающие индексации.</figcaption>
+        </figure>
+
+      </div>
+    <aside class="sidebar" aria-label="Боковая панель">
+      <div class="sidebar__block">
+        <h2 class="sidebar__title">Популярное</h2>
+        <ul class="sidebar__list">
+          <li><a href="onpage-seo.html">On-page оптимизация</a></li>
+          <li><a href="tehnicheskoe-seo.html">Техническое SEO</a></li>
+          <li><a href="instrumenty.html">Обзор инструментов</a></li>
+        </ul>
+      </div>
+      <div class="sidebar__block">
+        <h2 class="sidebar__title">Рассылка</h2>
+        <p>Раз в неделю — подборка новостей SEO.</p>
+        <form class="form form--subscribe" action="#" method="post">
+          <label class="form__label" for="sub-email">Email</label>
+          <input class="form__input" type="email" id="sub-email" name="email" placeholder="you@mail.com" required>
+          <button class="form__submit" type="submit">Подписаться</button>
+        </form>
+      </div>
+    </aside>
+
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <div class="site-footer__col">
+        <h2 class="site-footer__title">SEO-Гид</h2>
+        <p>Учебный проект: сайт о поисковой оптимизации (SEO), собранный на фреймворке Concise CSS.</p>
+      </div>
+      <div class="site-footer__col">
+        <h3 class="site-footer__subtitle">Разделы</h3>
+        <ul class="site-footer__list">
+          <li><a href="chto-takoe-seo.html">Что такое SEO</a></li>
+          <li><a href="instrumenty.html">Инструменты</a></li>
+          <li><a href="glossary.html">Глоссарий</a></li>
+          <li><a href="kontakty.html">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="site-footer__col">
+        <h3 class="site-footer__subtitle">Контакты</h3>
+        <ul class="site-footer__list">
+          <li>Email: <a href="mailto:info@seo-gid.example">info@seo-gid.example</a></li>
+          <li>Телефон: +7 (900) 000-00-00</li>
+          <li>г. Сыктывкар, ул. Примерная, д. 1</li>
+        </ul>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <p>&copy; 2026 SEO-Гид. Учебный проект. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
