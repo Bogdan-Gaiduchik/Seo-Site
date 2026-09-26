@@ -64,12 +64,17 @@ git clone https://github.com/Bogdan-Gaiduchik/Seo-Site.git
    npx serve либо через расширение Live Server в VS Code.
 
 
-## Деплой на GitHub Pages
+## Публикация на GitHub Pages
 
-1. Создайте репозиторий на GitHub и запушьте туда содержимое проекта.
-2. В настройках репозитория откройте вкладку **Settings → Pages**.
-3. В разделе **Build and deployment** выберите источник **Deploy from a branch**, ветку `main` и папку `/ (root)`.
-4. Сохраните — через 1–2 минуты сайт будет доступен по адресу `https://bogdan-gaiduchik.github.io/Seo-Site/`.
+Проект опубликован по адресу: https://bogdan-gaiduchik.github.io/Seo-Site/
+
+Если вы форкнули репозиторий и хотите опубликовать свою версию:
+
+1. В настройках репозитория откройте **Settings → Pages**.
+2. В разделе **Build and deployment** выберите источник **Deploy from a branch**,
+   ветку `main` и папку `/ (root)`.
+3. Сохраните — через 1–2 минуты сайт будет доступен по адресу
+   `https://ваш_ник.github.io/Seo-Site/`.
 
 
 ## Реализованные требования
